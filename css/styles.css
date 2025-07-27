@@ -36,6 +36,137 @@ img {
     width: 100%;
     height: auto;
 }
+@media screen and (max-width: 767px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .nav-logo {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .nav>.subnav,
+    .address .subaddress {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .main-page {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .page-title {
+        font-size: 36px;
+        line-height: 1.2;
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .button {
+        width: 100%;
+        padding: 14px;
+    }
+
+    .post {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post-list,
+    .team-page .team-list,
+    .portfolio-page .port-list {
+        width: 100%;
+    }
+
+    .team-page .team {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .portfolio-page .portfolio-list {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .portfolio-page .portfolio-title {
+        max-width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        text-align: center;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .subscribe-form-input,
+    .subscribe-btn {
+        width: 100%;
+    }
+
+    .modal {
+        width: 90%;
+        padding: 48px 16px 24px 16px;
+    }
+}
+@media screen and (max-width: 1157px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .post {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .post-list {
+        width: calc((100% - 24px) / 2);
+        /* 2 блоки в ряд */
+    }
+
+    .team-page .team,
+    .portfolio-page .portfolio-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .team-page .team-list,
+    .portfolio-page .port-list {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .portfolio-list .port-im {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-right: 0;
+    }
+
+    .footer-social-segment {
+        margin-right: 0;
+    }
+}
 .header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
