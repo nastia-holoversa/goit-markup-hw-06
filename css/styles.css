@@ -346,7 +346,6 @@ img {
     text-align: center;
 }
 .footer-logo {
-    /* margin-top: 96px; */
     text-align: center;
 }
 .footer .foot-logo {
@@ -468,6 +467,81 @@ img {
 .subscribe-btn-icon {
     margin-left: 16px;
     fill: #ffffff;
+}
+.backdrop-menu {
+position: fixed;
+    inset: 0;
+    z-index: 2;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    pointer-events: none;
+}
+.backdrop-menu.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 320px;
+    min-height: 640px;
+    padding: 72px 16px 16px 16px;
+    background-color: #fcfcfc;
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1px 3px 0 rgba(0, 0, 0, 0.12),
+        0 2px 1px 0 rgba(0, 0, 0, 0.2);
+}
+.subnav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.nav-link {
+    font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11111;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+}
+.nav .nav-link:hover,
+.nav .nav-link:focus {
+    color: #404bbf;
+}
+.nav .nav-link.active {
+    color: #404bbf;
+}
+.subaddress {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.address {
+    margin-top: 168px;
+}
+.link-add {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+    font-style: normal;
+}
+.address .link-add:hover,
+.address .link-add:focus {
+    color: #404bbf;
+}
+.social-burger-menu {
+    display: flex;
+    margin-top: 48px;
+    gap: 40px;
 }
 .backdrop {
     position: fixed;
@@ -708,6 +782,7 @@ img {
         gap: 40px;
         align-items: center;
         display: flex;
+        flex-direction: row;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -721,6 +796,11 @@ img {
         display: block;
         padding-top: 24px;
         padding-bottom: 24px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
         color: #2e2f42;
         position: relative;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -743,14 +823,26 @@ img {
         left: 0;
         bottom: -1px;
         }
+    .subaddress {
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px 0;
+    }
     .address {
         font-style: normal;
         line-height: 1.5;
+        margin-top: 0;
     }
     .address .link-add {
         display: block;
         color: #434455;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16667;
+        letter-spacing: 0.04em;
+        color: #434455;
     }
     .address .link-add:hover,
     .address .link-add:focus {
@@ -818,9 +910,6 @@ img {
 .footer-logo .foot-logo {
 margin-bottom: 16px;
 }
-.subscribe {
-    outline: #31d0aa solid;
-}
 .subscribe-form {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -842,8 +931,8 @@ margin-bottom: 16px;
     }
     .address .subaddress {
         display: flex;
-        gap: 40px;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        flex-direction: row;
         }
     .main-page {
     padding-top: 188px;
