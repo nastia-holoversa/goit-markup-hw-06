@@ -127,11 +127,15 @@
         <h2 class="team-title">Our Team</h2>
         <ul class="team">
           <li class="team-list">
-        <img class="team-im" 
-        src="./images/mark.jpg"
-        srcset="./images/mark.jpg, ./images/mark@2x.jpg, ./images/mark@3x.jpg"
-        sizes="(max-width:1158px) 100vw, 264px"
-         alt="Mark Guerrero" width="264" height="260"/>
+            <picture>
+              <source media="(min-width: 1158px)"
+        srcset="./images/mark.jpg, ./images/mark@2x.jpg, ./images/mark@3x.jpg"/>
+        <source media="(min-width: 768px)" 
+        srcset="./images/mark.jpg, ./images/mark@2x.jpg, ./images/mark@3x.jpg" />
+        <source media="(max-width: 767.98pxpx)" srcset="./images/mark.jpg, ./images/mark@2x.jpg, ./images/mark@3x.jpg" />
+        <img class="team-im" src="./images/mark.jpg"
+        sizes="(max-width: 768px) 100vw, 264px"
+         alt="Mark Guerrero" width="264" height="260"/></picture>
         <div class="tl-punct">
             <h3 class="team-name">Mark Guerrero</h3>
             <p class="team-text">Product Designer</p>
@@ -168,11 +172,17 @@
         </div>
           </li>
           <li class="team-list">
-            <img class="team-im" 
-            src="./images/tom.jpg"
-            srcset="./images/tom.jpg, ./images/tom@2x.jpg, ./images/tom@3x.jpg"
+            <picture>
+            <source media="(min-width: 1158px)"
+            srcset="./images/tom.jpg, ./images/tom@2x.jpg, ./images/tom@3x.jpg"/>
+            <source media="(min-width: 768px)" 
+            srcset="./images/tom.jpg, ./images/tom@2x.jpg, ./images/tom@3x.jpg" />
+            <source media="(max-width: 767.98pxpx)" 
+            srcset="./images/tom.jpg, ./images/tom@2x.jpg, ./images/tom@3x.jpg" />
+            <img class="team-im" src="./images/tom.jpg"
             sizes="(max-width:1158px) 100vw, 264px"
             alt="Tom Ford" width="264" height="260"/>
+            </picture>
             <div class="tl-punct">
                 <h3 class="team-name">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -209,11 +219,16 @@
             </div>
           </li>
           <li class="team-list">
-            <img class="team-im" 
-            src="./images/camila.jpg"
-            srcset="./images/camila.jpg, ./images/camila@2x.jpg, ./images/camila@3x.jpg"
+            <picture>
+              <source media="(min-width: 1158px)"
+            srcset="./images/camila.jpg, ./images/camila@2x.jpg, ./images/camila@3x.jpg"/>
+            <source media="(min-width: 768px)" 
+            srcset="./images/camila.jpg, ./images/camila@2x.jpg, ./images/camila@3x.jpg" />
+            <source media="(max-width: 767.98pxpx)" 
+            srcset="./images/camila.jpg, ./images/camila@2x.jpg, ./images/camila@3x.jpg" />
+            <img class="team-im" src="./images/camila.jpg"
             sizes="(max-width:1158px) 100vw, 264px"
-            alt="Camila Garcia" width="264" height="260" />
+            alt="Camila Garcia" width="264" height="260" /></picture>
             <div class="tl-punct">
                 <h3 class="team-name">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
@@ -250,11 +265,17 @@
             </div>
           </li>
           <li class="team-list">
-                <img class="team-im" 
-                src="./images/daniel.jpg"
-                srcset="./images/daniel.jpg, ./images/daniel@2x.jpg, ./images/daniel@3x.jpg"
+                <picture>
+                  <source media="(min-width:1158px)"
+                srcset="./images/daniel.jpg, ./images/daniel@2x.jpg, ./images/daniel@3x.jpg"/>
+                <source media="(min-width: 768px)" 
+                srcset="./images/daniel.jpg, ./images/daniel@2x.jpg, ./images/daniel@3x.jpg" />
+                <source media="(max-width: 767.98pxpx)" 
+                srcset="./images/daniel.jpg, ./images/daniel@2x.jpg, ./images/daniel@3x.jpg" />
+                <img class="team-im" src="./images/daniel.jpg"
                 sizes="(max-width:1158px) 100vw, 264px"
                 alt="Daniel Wilson" width="264" height="260" />
+                </picture>
                 <div class="tl-punct">
                     <h3 class="team-name">Daniel Wilson</h3>
                     <p class="team-text">UI Designer</p>
@@ -299,15 +320,22 @@
         <ul class="portfolio-list">
           <li class="port-img">
             <div class="box">
+              <picture>
+                <source media="(min-width= 1158px)"
+                srcset="./images/banking.jpg, ./images/banking@2x.jpg, ./images/banking@3x.jpg"/>
+                <source media="(min-width= 768px)" 
+                srcset="./images/banking.jpg, ./images/banking@2x.jpg, ./images/banking@3x.jpg" />
+                <source media="(max-width= 767.98pxpx)" 
+                srcset="./images/banking.jpg, ./images/banking@2x.jpg, ./images/banking@3x.jpg" />
             <img
               class="port-im"
               src="./images/banking.jpg"
-              srcset="./images/banking.jpg, ./images/banking@2x.jpg, ./images/banking@3x.jpg"
               sizes="(max-width:1158px) 100vw, 360px"
               alt="Banking App"
               width="360"
               height="300"
             />
+            </picture>
             <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
               Exotic Fruit Ecommerce App ·
               Cloud Storage App</p>
@@ -319,15 +347,22 @@
           </li>
           <li class="port-img">
             <div class="box">
+              <picture>
+              <source media="(min-width: 1158px)"
+                srcset="./images/cashless.jpg, ./images/cashless@2x.jpg, ./images/cashless@3x.jpg"/>
+              <source media="(min-width: 768px)"
+                  srcset="./images/cashless.jpg, ./images/cashless@2x.jpg, ./images/cashless@3x.jpg" />
+              <source media="(max-width: 767.98pxpx)"
+                    srcset="./images/cashless.jpg, ./images/cashless@2x.jpg, ./images/cashless@3x.jpg" />
             <img
               class="port-im"
               src="./images/cashless.jpg"
-              srcset="./images/cashless.jpg, ./images/cashless@2x.jpg, ./images/cashless@3x.jpg"
               sizes="(max-width:1158px) 100vw, 360px"
               alt="Cashless Payment"
               width="360"
               height="300"
             />
+            </picture>
               <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                 App ·
                 Cloud Storage App</p>
@@ -339,15 +374,22 @@
           </li>
           <li class="port-img">
             <div class="box">
+              <picture>
+                <source media="(min-width: 1158px)"
+                srcset="./images/meditation.jpg, ./images/meditation@2x.jpg, ./images/meditation@3x.jpg"/>
+                <source media="(min-width: 768px)"
+                  srcset="./images/meditation.jpg, ./images/meditation@2x.jpg, ./images/meditation@3x.jpg" />
+                  <source media="(max-width: 767.98pxpx)"
+                    srcset="./images/meditation.jpg, ./images/meditation@2x.jpg, ./images/meditation@3x.jpg" />
             <img
               class="port-im"
               src="./images/meditation.jpg"
-              srcset="./images/meditation.jpg, ./images/meditation@2x.jpg, ./images/meditation@3x.jpg"
               sizes="(max-width:1158px) 100vw, 360px"
               alt="Meditation App"
               width="360"
               height="300"
             />
+            </picture>
               <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                 App ·
                 Cloud Storage App</p>
@@ -359,15 +401,22 @@
           </li>
           <li class="port-img">
             <div class="box">
+              <picture>
+                <source media="(min-width: 1158px)"
+                 srcset="./images/taxi.jpg, ./images/taxi@2x.jpg, ./images/taxi@3x.jpg"/>
+                <source media="(min-width: 768px)" 
+                srcset="./images/taxi.jpg, ./images/taxi@2x.jpg, ./images/taxi@3x.jpg" />
+                <source media="(max-width: 767.98pxpx)" 
+                srcset="./images/taxi.jpg, ./images/taxi@2x.jpg, ./images/taxi@3x.jpg" />
             <img
               class="port-im"
               src="./images/taxi.jpg"
-              srcset="./images/taxi.jpg, ./images/taxi@2x.jpg, ./images/taxi@3x.jpg"
               sizes="(max-width:1158px) 100vw, 360px"
               alt="Taxi Service"
               width="360"
               height="300"
             />
+            </picture>
               <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                 App ·
                 Cloud Storage App</p>
@@ -379,15 +428,22 @@
           </li>
           <li class="port-img">
             <div class="box">
+              <picture>
+                <source media="(min-width: 1158px)"
+                srcset="./images/screen.jpg, ./images/screen@2x.jpg, ./images/screen@3x.jpg"/>
+                <source media="(min-width: 768px)" 
+                srcset="./images/screen.jpg, ./images/screen@2x.jpg, ./images/screen@3x.jpg" />
+                <source media="(max-width: 767.98pxpx)" 
+                srcset="./images/screen.jpg, ./images/screen@2x.jpg, ./images/screen@3x.jpg" />
             <img
               class="port-im"
               src="./images/screen.jpg"
-              srcset="./images/screen.jpg, ./images/screen@2x.jpg, ./images/screen@3x.jpg"
               sizes="(max-width:1158px) 100vw, 360px"
               alt="Screen Illustration"
               width="360"
               height="300"
             />
+            </picture>
               <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                 App ·
                 Cloud Storage App</p>
@@ -399,15 +455,22 @@
           </li>
           <li class="port-img">
             <div class="box">
+              <picture>
+                <source media="(min-width: 1158px)"
+                srcset="./images/online.jpg, ./images/online@2x.jpg, ./images/online@3x.jpg"/>
+                <source media="(min-width: 768px)" 
+                srcset="./images/online.jpg, ./images/online@2x.jpg, ./images/online@3x.jpg" />
+                <source media="(max-width: 767.98px)" 
+                srcset="./images/online.jpg, ./images/online@2x.jpg, ./images/online@3x.jpg" />
             <img
               class="port-im"
               src="./images/online.jpg"
-              srcset="./images/online.jpg, ./images/online@2x.jpg, ./images/online@3x.jpg"
               sizes="(max-width:1158px) 100vw, 360px"
               alt="Online Courses"
               width="360"
               height="300"
             />
+            </picture>
               <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
                 App ·
                 Cloud Storage App</p>
